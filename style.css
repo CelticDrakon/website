@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 50pt;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+.p2 {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.image {
+    margin-top: 30px;
+    width: 30%;
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    rotate: 2deg;
+    border-color: aquamarine;
+    border-width: 2px 2px 2px 2px;
+    border-style: dashed;
+}
+
+.image2 {
+    margin-top: 30px;
+    width: 30%;
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    rotate: -2deg;
+    border-color: aquamarine;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+@media (max-width: 600px){
+    h1 {
+        font-size: 24pt;
+    }
+    .image {
+        width: 80%
+    }
+    .image2 {
+        width: 80%
+    }
+}
+
+@media (max-width: 768px) and (min-width: 601px){
+    h1 {
+        font-size: 34pt;
+    }
+    .image {
+        width: 70%
+    }
+    .image2 {
+        width: 70%
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px){
+    h1 {
+        font-size: 38pt;
+    }
+    .image {
+        width: 60%
+    }
+    .image2 {
+        width: 60%
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 993px){
+    h1 {
+        font-size: 42pt;
+    }
+    .image {
+        width: 40%
+    }
+    .image2 {
+        width: 40%
+    }
+}
+
+@media (min-width: 1201px){
+    h1 {
+        font-size: 50pt;
+    }
+    .image {
+        width: 30%
+    }
+    .image2 {
+        width: 30%
+    }
+}
