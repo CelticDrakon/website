@@ -16,3 +16,28 @@
         <img class="image" src="erebor.jpg">
     </body>
 </html>
+
+<?php
+    // Multiple recipients
+    $to  = 'celticdrakon@gmail.com' . ', '; // Note the comma
+
+    // Subject
+    $subject = 'Birthday Reminders for August';
+
+    // Message
+    $message = '
+      <p>Here are the birthdays upcoming in August!</p>
+    ';
+
+    // To send HTML mail, the Content-type header must be set
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+
+    // Additional headers
+    $headers .= 'Yoooo' . "\r\n";
+    $headers .= 'From: Website' . "\r\n";
+
+
+    // Mail it
+    mail($to, $subject, $message, $headers);
+?>
